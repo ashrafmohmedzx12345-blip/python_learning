@@ -18,11 +18,11 @@ students = {
     "Hassan": 95
 }
 def get_lowest_student(students):
-  name=students.keys()
+  name=list(students.keys())
   min_grade=students[name[0]]
   for i in students:
     if students[i]<min_grade:
       min_grade=students[i]
-  return min_grade  
+  return i
 x=  get_lowest_student(students)
 print(x)
